@@ -34,4 +34,4 @@ jodys:
 /home/jodys/.ssh/authorized_keys:
     - user: jodys
     - contents:
-      - {{ pillar['ssh']['ssh_key'] }}
+      - {{ pillar['ssh_key'] }}
