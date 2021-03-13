@@ -7,6 +7,7 @@ jodys:
 
 /home/jodys/.kshrc:
   file.managed:
+    - user: jodys
     - contents: 
       - . /etc/ksh.kshrc
       - HISTFILE="$HOME/.ksh_history"
@@ -23,8 +24,14 @@ jodys:
 
 /home/jodys/.profile:
   file.managed:
+    - user: jodys
     - contents: 
       - PATH=$HOME/bin:/home/jodys/.local/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin:/usr/games
       - TERM=xterm-256color
       - ENV=$HOME/.kshrc
       - export PATH HOME TERM ENV
+
+/home/jodys/.ssh/authorized_keys:
+    - user: jodys
+    - contents:
+      - {{ pillar['ssh']['ssh_key'] }}
