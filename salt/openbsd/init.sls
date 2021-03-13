@@ -1,3 +1,3 @@
 /etc/doas.conf:
   file.managed:
-    - source: salt://doas.conf
+    - source: file://doas.conf
