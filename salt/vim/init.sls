@@ -17,3 +17,11 @@ https://github.com/23jodys/vim-dot-files.git:
     - user: jodys
     - force_reset: True  
     - submodules: True
+
+/home/jodys/.vim/swap:
+  file.directory:
+    - user: jodys
+       
+/home/jodys/.vimrc:
+  file.symlink:
+    - target: /home/jodys/.vim/.vimrc
