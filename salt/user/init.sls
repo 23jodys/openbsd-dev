@@ -32,6 +32,7 @@ jodys:
       - export PATH HOME TERM ENV
 
 /home/jodys/.ssh/authorized_keys:
+  file.managed:
     - user: jodys
     - contents:
       - {{ pillar['ssh_key'] }}
