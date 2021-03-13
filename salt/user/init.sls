@@ -33,6 +33,7 @@ jodys:
 
 /home/jodys/.ssh/authorized_keys:
   file.managed:
+    - mode: 0400
     - user: jodys
     - contents:
       - {{ pillar['ssh_key'] }}
