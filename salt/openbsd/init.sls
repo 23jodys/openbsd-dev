@@ -1,3 +1,4 @@
 /etc/doas.conf:
   file.managed:
-    - source: file://doas.conf
+    - contents: 
+      - permit persist setenv { -ENV PS1= SSH_AUTH_SOCK } :wheel
