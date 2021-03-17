@@ -31,7 +31,6 @@ jodys:
       - TERM=xterm-256color
       - ENV=$HOME/.kshrc
       - export PATH HOME TERM ENV
-{% endif %}
 
 /home/jodys/.ssh/authorized_keys:
   file.managed:
@@ -39,6 +38,7 @@ jodys:
     - user: jodys
     - contents:
       - {{ pillar['ssh_key'] }}
+{% endif %}
 
 /home/jodys/.gitconfig:
   file.managed:
