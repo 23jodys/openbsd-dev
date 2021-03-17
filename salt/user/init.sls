@@ -5,7 +5,7 @@ jodys:
       - wheel
     - uid: 1026
 
-{% if os.grains['ls'] == 'OpenBSD' %}
+{% if salt.grains['os'] == 'OpenBSD' %}
 /home/jodys/.kshrc:
   file.managed:
     - user: jodys
