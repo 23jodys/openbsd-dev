@@ -1,0 +1,7 @@
+vultr.tfvars
+*~
+*.swp
+*.tfstate
+.terraform
+*.hcl
+*.backup
