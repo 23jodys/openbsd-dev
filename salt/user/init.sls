@@ -5,6 +5,7 @@ jodys:
       - wheel
     - uid: 1026
 
+{% if os.grains['ls'] == 'OpenBSD' %}
 /home/jodys/.kshrc:
   file.managed:
     - user: jodys
@@ -30,6 +31,7 @@ jodys:
       - TERM=xterm-256color
       - ENV=$HOME/.kshrc
       - export PATH HOME TERM ENV
+{% endif %}
 
 /home/jodys/.ssh/authorized_keys:
   file.managed:
