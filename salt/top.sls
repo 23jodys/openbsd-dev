@@ -4,7 +4,10 @@ base:
     - vim 
     - dev
     - openbsd
-  'plex':
+  'plex*':
     - vim 
     - storage
     - plex
+test:
+  'plex*':
+    - vim
