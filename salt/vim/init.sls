@@ -15,6 +15,14 @@ vim:
       - vim
 {% endif %}
 
+'yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm':
+  cmd.run: []
+
+{% if grains['os'] == 'RedHat' %}
+python3-GitPython:
+  pkg.installed: []
+{% endif %}
+
 https://github.com/23jodys/vim-dot-files.git:
   git.latest:
     - target: /home/jodys/.vim
