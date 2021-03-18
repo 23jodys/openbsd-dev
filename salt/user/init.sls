@@ -45,5 +45,5 @@ jodys:
     - user: jodys
     - contents: |
       [user]
-        name = Jody Stephens
-        email = jodys@helluin.org
+      name = Jody Stephens
+      email = jodys@helluin.org
