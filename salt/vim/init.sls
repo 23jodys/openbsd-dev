@@ -1,5 +1,5 @@
 include: 
-  - user
+  - salt/user
 
 vim:
   pkg.installed: 
