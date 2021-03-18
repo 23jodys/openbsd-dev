@@ -40,10 +40,10 @@ jodys:
       - {{ pillar['ssh_key'] }}
 {% endif %}
 
-/home/jodys/.gitconfig:
-  file.managed:
-    - user: jodys
-    - contents: |
-      [user]
-      name = Jody Stephens
-      email = jodys@helluin.org
+#/home/jodys/.gitconfig:
+#  file.managed:
+#    - user: jodys
+#    - contents: 
+#      - [user]
+#      - name = Jody Stephens
+#      - email = jodys@helluin.org
