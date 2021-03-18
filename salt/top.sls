@@ -6,5 +6,5 @@ base:
     - openbsd
   'plex':
     - salt/vim 
-    - salt/storage
+    - salt/user
     - salt/plex
