@@ -15,7 +15,7 @@ vim:
       - vim
 {% endif %}
 
-'yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm':
+'yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm':
   cmd.run: []
 
 {% if grains['os'] == 'RedHat' %}
