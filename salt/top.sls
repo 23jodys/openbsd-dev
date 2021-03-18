@@ -5,6 +5,6 @@ base:
     - dev
     - openbsd
   'plex':
-    - vim 
-    - storage
-    - plex
+    - salt/vim 
+    - salt/storage
+    - salt/plex
