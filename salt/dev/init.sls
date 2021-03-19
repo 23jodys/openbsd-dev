@@ -1,4 +1,4 @@
-dev:
+devpackages:
   pkg.installed: 
     - pkgs:
       - cmocka 
