@@ -4,7 +4,7 @@ base:
     - vim 
     - dev
     - openbsd
-  'plex*':
+  'plex.helluin.local':
     - salt/vim 
     - salt/user
     - salt/plex
