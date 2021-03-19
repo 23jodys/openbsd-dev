@@ -1,5 +1,5 @@
 dependencies:
-  - pkg.installed:
+  pkg.installed:
     - pkgs:
       - openvpn
       - dialog
@@ -7,6 +7,6 @@ dependencies:
       - python3-setuptools
 
 protonvpn-cli:
-  - pip.installed: 
+  pip.installed: 
     - require:
       - pkg: dependencies
