@@ -1,8 +1,10 @@
 jodys:
   user.present:
     - home: /home/jodys
+{% if grains['os'] == 'OpenBSD' or grains['os'] == 'RedHat' %}
     - groups:
       - wheel
+{% endif %}
     - uid: 1026
 
 {% if grains['os'] == 'OpenBSD' %}
