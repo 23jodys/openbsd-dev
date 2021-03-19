@@ -7,6 +7,12 @@ nfs-utils:
     - mkmnt: true
     - fstype: nfs
 
+/helluin/music:
+  mount.mounted:
+    - device: westfold.helluin.org:/volume1/music
+    - mkmnt: true
+    - fstype: nfs
+
 plex_repo:
   pkgrepo.managed:
      - humanname: Plex
