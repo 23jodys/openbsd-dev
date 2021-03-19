@@ -8,3 +8,7 @@ base:
     - salt/vim 
     - salt/user
     - salt/plex
+  'torrent':
+    - salt/vim
+    - salt/user
+    - salt/protonvpn
