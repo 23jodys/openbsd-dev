@@ -1,8 +1,12 @@
-proton-repo:
-  pkgrepo.managed:
-    - name: deb https://repo.protonvpn.com/debian unstable main
-    - key_url: https://repo.protonvpn.com/debian/public_key.asc
+dependencies:
+  - pkg.installed:
+    - pkgs:
+      - openvpn
+      - dialog
+      - python3-pip
+      - python3-setuptools
 
-protonvpn:
-  pkg.installed: []
-
+protonvpn-cli:
+  - pip.installed: 
+    - require:
+      - pkg: dependencies
