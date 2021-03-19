@@ -4,7 +4,7 @@ base:
     - vim 
     - dev
     - openbsd
-  'plex':
+  'plex*':
     - salt/vim 
     - salt/user
     - salt/plex
