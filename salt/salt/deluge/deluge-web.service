@@ -7,7 +7,7 @@ Type=simple
 User=deluge
 Group=deluge
 UMask=027
-ExecStart=/usr/bin/deluge-web -d
+ExecStart=/usr/bin/deluge-web -c /etc/deluged/ -d
 Restart=on-failure
 
 [Install]
