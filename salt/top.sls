@@ -5,10 +5,10 @@ base:
     - dev
     - openbsd
   'plex*':
-    - salt/vim 
-    - salt/user
-    - salt/plex
+    - vim 
+    - user
+    - plex
   'torrent':
-    - salt/vim
-    - salt/user
-    - salt/protonvpn
+    - vim
+    - user
+    - protonvpn
