@@ -12,3 +12,4 @@ base:
     - vim
     - user
     - protonvpn
+    - deluge
