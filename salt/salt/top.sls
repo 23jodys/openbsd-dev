@@ -9,11 +9,11 @@ base:
     - user
     - plex
     - media_storage
-  'torrent':
+  'torrent*':
     - vim
     - user
     - protonvpn
     - deluge
     - media_storage
-  'unifi':
+  'unifi*':
     - unifi
