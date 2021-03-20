@@ -34,13 +34,13 @@ jodys:
       - ENV=$HOME/.kshrc
       - export PATH HOME TERM ENV
 
+{% endif %}
 /home/jodys/.ssh/authorized_keys:
   file.managed:
     - mode: 0400
     - user: jodys
     - contents:
       - {{ pillar['ssh_key'] }}
-{% endif %}
 
 #/home/jodys/.gitconfig:
 #  file.managed:
