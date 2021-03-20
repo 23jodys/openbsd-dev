@@ -15,3 +15,5 @@ base:
     - protonvpn
     - deluge
     - media_storage
+  'unifi':
+    - unifi
