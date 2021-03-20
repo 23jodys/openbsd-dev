@@ -7,7 +7,7 @@ Type=simple
 User=deluge
 Group=deluge
 UMask=007
-ExecStart=/usr/bin/deluged -d
+ExecStart=/usr/bin/deluged -d -c /etc/deluged/
 Restart=on-failure
 
 # Configures the time to wait before service is stopped forcefully.
