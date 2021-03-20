@@ -3,6 +3,7 @@ dependencies:
     - pkgs:
       - ca-certificates
       - apt-transport-https
+      - openjdk-8-jre-headless
 
 unifi_repo:
   pkgrepo.managed:
@@ -10,6 +11,9 @@ unifi_repo:
     - key_url: https://dl.ui.com/unifi/unifi-repo.gpg 
 
 unifi:
-  pkg.installed: []
+  pkg.installed: 
+    - require:
+      - pkgrepo: unifi_repo
+      - pkg: dependencies
   service.running: 
     - enable: true
