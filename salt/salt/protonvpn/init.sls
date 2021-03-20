@@ -24,8 +24,8 @@ protonvpn-cli:
     - template: jinja
     - mode: 0400
 
-'truncate -s -1 /root/.pvpn-cli/pvpnpass':
-  cmd.run:
-    - watch:
-      - file: /root/.pvpn-cli/pvpnpass
+#'truncate -s -1 /root/.pvpn-cli/pvpnpass':
+#  cmd.run:
+#    - watch:
+#      - file: /root/.pvpn-cli/pvpnpass
 
