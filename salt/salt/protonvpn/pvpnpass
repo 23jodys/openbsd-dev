@@ -1,0 +1,2 @@
+{{ pillar['protonvpn_username'] }}+plc
+{{ pillar['protonvpn_password'] -}}
