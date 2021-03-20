@@ -35,10 +35,12 @@ jodys:
       - export PATH HOME TERM ENV
 
 {% endif %}
+
 /home/jodys/.ssh/authorized_keys:
   file.managed:
     - mode: 0400
     - user: jodys
+    - makedirs: true
     - contents:
       - {{ pillar['ssh_key'] }}
 
