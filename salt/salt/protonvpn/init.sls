@@ -24,6 +24,21 @@ protonvpn-cli:
     - template: jinja
     - mode: 0400
 
+pvpn_service:
+  file.managed:
+    - name: /etc/systemd/system/protonvpn.service
+    - source: salt://protonvpn/protonvpn.service
+  module.run:
+    - name: service.systemctl_reload
+    - onchanges:
+      - file: pvpn_service
+
+protonvpn:
+  service.running:
+    - name: protonvpn
+    - watch:
+      - module: pvpn_service
+
 #'truncate -s -1 /root/.pvpn-cli/pvpnpass':
 #  cmd.run:
 #    - watch:
