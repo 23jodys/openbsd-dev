@@ -36,6 +36,7 @@ pvpn_service:
 protonvpn:
   service.running:
     - name: protonvpn
+    - enable: true
     - watch:
       - module: pvpn_service
 
