@@ -17,3 +17,8 @@ base:
     - media_storage
   'unifi*':
     - unifi
+  'mirkwood*':
+    - user
+    - vim
+    - dev
+    - openbsd
