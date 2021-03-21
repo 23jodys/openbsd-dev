@@ -1,7 +1,6 @@
 /etc/doas.conf:
   file.managed:
-    - contents: 
-      - permit nopass setenv { -ENV PS1= SSH_AUTH_SOCK } :wheel
+    - source: salt://openbsd/doas.conf
 
 /etc/rc.d/sshfs:
   file.managed:
