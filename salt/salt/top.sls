@@ -15,6 +15,7 @@ base:
     - protonvpn
     - deluge
     - media_storage
+    - picard
   'unifi*':
     - unifi
   'mirkwood*':
