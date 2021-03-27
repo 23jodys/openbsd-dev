@@ -8,7 +8,7 @@ base:
     - vim 
     - user
     - plex
-    - media_storage
+    - media_storage_vlan
   'torrent*':
     - vim
     - user
