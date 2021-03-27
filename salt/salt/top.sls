@@ -14,7 +14,7 @@ base:
     - user
     - protonvpn
     - deluge
-    - media_storage
+    - media_storage_vlan
     - picard
   'unifi*':
     - unifi
