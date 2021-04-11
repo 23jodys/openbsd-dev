@@ -10,5 +10,5 @@ https://github.com/openbsd/ports.git:
   git.latest:
     - target: /usr/ports
     - require:
-      - mount: /usr/ports
+      - mount: /usr/ports/
     - user: jodys
