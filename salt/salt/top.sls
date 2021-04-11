@@ -23,3 +23,4 @@ base:
     - vim
     - dev
     - openbsd
+    - openbsd_ports
