@@ -3,5 +3,5 @@
     - fstype: nfs
     - device: westfold.helluin.org:/volume1/openbsd_ports
     - mkmnt: true
-    - defaults: ac
+    - opts: null
     
