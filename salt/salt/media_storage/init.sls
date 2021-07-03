@@ -18,3 +18,8 @@ nfs-common:
     - mkmnt: true
     - fstype: nfs
 
+/helluin/archive:
+  mount.mounted:
+    - device: 10.0.18.18:/volume1/archive
+    - mkmnt: true
+    - fstype: nfs
