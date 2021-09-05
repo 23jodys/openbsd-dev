@@ -17,3 +17,4 @@ docker_pkgs:
       - docker-ce
       - docker-ce-cli
       - containerd.io
+      - docker-compose
