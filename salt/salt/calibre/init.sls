@@ -4,6 +4,9 @@
     - mkmnt: true
     - fstype: nfs
 
+/etc/linuxserver.io/:
+  file.directory: []
+
 /etc/linuxserver.io/calibre-compose.yml:
   file.managed:
     - source: 'salt://calibre/calibre-compose.yml'
