@@ -28,3 +28,5 @@ base:
     - vim
     - user
     - media_storage_vlan
+    - docker
+    - calibre
