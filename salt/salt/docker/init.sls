@@ -11,4 +11,9 @@ docker_repo:
     - name: deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
     - key_url: https://download.docker.com/linux/ubuntu/gpg 
 
-
+docker_pkgs:
+  pkg.installed:
+    - pkgs:
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
