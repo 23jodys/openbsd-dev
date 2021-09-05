@@ -24,3 +24,7 @@ base:
     - dev
     - openbsd
     - openbsd_ports
+  'docker*':
+    - vim
+    - user
+    - media_storage_vlan
