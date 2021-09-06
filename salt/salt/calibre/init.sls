@@ -16,7 +16,7 @@ nginx-full:
 
 nginx:
   service.running: 
-    - enabled: true
+    - enable: true
     - reload: true
     - watch:
       - file: /etc/nginx/sites-enabled/calibre
