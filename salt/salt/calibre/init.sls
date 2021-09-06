@@ -4,11 +4,26 @@
     - mkmnt: true
     - fstype: nfs
 
+nginx-full:
+  pkg.installed: []
+
+/etc/nginx/sites-enabled/default:
+  file.absent: []
+
+/etc/nginx/sites-enabled/calibre:
+  file.managed:
+    - source: salt://calibre/calibre-nginx.conf
+
+nginx:
+  service.running: 
+    - enabled: true
+    - reload: true
+    - watch:
+      - file: /etc/nginx/sites-enabled/calibre
+
 /etc/linuxserver.io/calibre-compose/:
   file.directory: 
     - makedirs: true
-
-
 
 /etc/linuxserver.io/calibre-compose/docker-compose.yml:
   file.managed:
@@ -22,4 +37,3 @@ calibre_compose_unit:
     - name: service.systemctl_reload
     - onchanges:
       - file: calibre_compose_unit
-  
