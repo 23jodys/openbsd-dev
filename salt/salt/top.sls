@@ -9,6 +9,11 @@ base:
     - user
     - plex
     - media_storage_vlan
+  'public-plex*':
+    - vim 
+    - user
+    - plex
+    - media_public_storage_vlan
   'torrent*':
     - vim
     - user
