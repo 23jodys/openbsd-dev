@@ -20,6 +20,6 @@ nfs-common:
 
 /helluin/books:
   mount.mounted:
-    - device: 192.168.17.18:/volume1/music
+    - device: 192.168.17.18:/volume1/books
     - mkmnt: true
     - fstype: nfs
