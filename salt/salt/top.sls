@@ -4,16 +4,19 @@ base:
     - vim 
     - dev
     - openbsd
+    - updates
   'plex*':
     - vim 
     - user
     - plex
     - media_storage_vlan
+    - updates
   'public-plex*':
     - vim 
     - user
     - plex
     - media_public_storage_vlan
+    - updates
   'torrent*':
     - vim
     - user
@@ -21,8 +24,10 @@ base:
     - deluge
     - media_storage_vlan
     - picard
+    - updates
   'unifi*':
     - unifi
+    - updates
   'mirkwood*':
     - user
     - vim
@@ -30,6 +35,7 @@ base:
     - openbsd
     - openbsd_ports
   'docker*':
+    - updates
     - vim
     - user
     - media_storage_vlan
