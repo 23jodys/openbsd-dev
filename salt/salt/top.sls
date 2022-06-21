@@ -41,3 +41,8 @@ base:
     - media_storage_vlan
     - docker
     - calibre
+  'db*':
+    - updates
+    - user
+    - vim
+    - db
