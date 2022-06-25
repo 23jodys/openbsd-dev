@@ -41,6 +41,6 @@ base:
     - media_storage_vlan
     - docker
     - calibre
-  'gitlab*':
+  'gondor*':
     - updates
     - gitlab
