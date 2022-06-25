@@ -1,6 +1,3 @@
-includes:
-  - postgres
-
 base:
   'dev':
     - user
@@ -44,11 +41,6 @@ base:
     - media_storage_vlan
     - docker
     - calibre
-  'db*':
-    - updates
-    - user
-    - vim
-    - postgres
   'gitlab*':
     - updates
     - gitlab
