@@ -1,3 +1,6 @@
+includes:
+  - postgres
+
 base:
   'dev':
     - user
@@ -45,4 +48,7 @@ base:
     - updates
     - user
     - vim
-    - db
+    - postgres
+  'gitlab*':
+    - updates
+    - gitlab
