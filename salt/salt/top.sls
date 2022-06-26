@@ -44,6 +44,6 @@ base:
   'gondor*':
     - updates
     - gitlab
-  'gitlab-runner1':
+  'gitlab-runner1*':
     - updates
     - gitlab-runner
