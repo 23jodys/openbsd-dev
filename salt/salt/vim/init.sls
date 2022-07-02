@@ -6,6 +6,7 @@ vim:
     - pkgs:
 {% if grains['os'] == 'RedHat' %}
       - vim-enhanced
+      - git
 {% elif grains['os'] == 'OpenBSD' %}
       - vim--no_x11-perl-python3-ruby
       - fzf
@@ -15,6 +16,7 @@ vim:
       - vim-nox
 {% else %}
       - vim
+      - git
 {% endif %}
 
 
