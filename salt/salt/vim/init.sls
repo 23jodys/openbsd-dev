@@ -4,7 +4,7 @@ include:
 vim:
   pkg.installed: 
     - pkgs:
-{% if grains['os'] == 'RedHat' || grains['os'] == 'AlmaLinux' %}
+{% if grains['os'] == 'RedHat' or grains['os'] == 'AlmaLinux' %}
       - vim-enhanced
       - git
 {% elif grains['os'] == 'OpenBSD' %}
