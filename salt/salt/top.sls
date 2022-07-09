@@ -48,7 +48,7 @@ base:
   'gondor*':
     - updates
     - gitlab
-  'grafana*':
+  'grafana.helluin.org':
     - updates
     - user
     - vim
