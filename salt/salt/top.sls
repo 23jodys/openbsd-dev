@@ -48,6 +48,7 @@ base:
     - updates
     - user
     - vim
+    - grafana
   'gitlab-runner1*':
     - updates
     - gitlab-runner
