@@ -49,6 +49,7 @@ base:
     - user
     - vim
     - grafana
+    - influxdb
   'gitlab-runner1*':
     - updates
     - gitlab-runner
