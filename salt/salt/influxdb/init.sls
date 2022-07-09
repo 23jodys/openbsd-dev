@@ -9,4 +9,8 @@ influx_repo:
 influxdb2:
   pkg.latest: 
     - refresh: True
-  service.running: []
+
+influxdb:
+  service.running: 
+    - require:
+      - pkg: influxdb2
