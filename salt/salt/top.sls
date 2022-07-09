@@ -48,6 +48,11 @@ base:
   'gondor*':
     - updates
     - gitlab
+  'grafana*':
+    - updates
+    - user
+    - vim
+    - grafana
   'gitlab-runner1*':
     - updates
     - gitlab-runner
