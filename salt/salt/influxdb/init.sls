@@ -8,5 +8,5 @@ influx_repo:
 
 influxdb2:
   pkg.latest: 
-    refresh: True
+    - refresh: True
   service.running: []
