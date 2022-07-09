@@ -7,5 +7,6 @@ influx_repo:
     - gpgcheck: True
 
 influxdb2:
-  pkg.latest: []
+  pkg.latest: 
+    refresh: True
   service.running: []
