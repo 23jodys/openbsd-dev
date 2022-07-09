@@ -41,10 +41,6 @@ base:
     - media_storage_vlan
     - docker
     - calibre
-  'vault*':
-    - updates
-    - user
-    - vim
   'gondor*':
     - updates
     - gitlab
@@ -52,7 +48,6 @@ base:
     - updates
     - user
     - vim
-    - grafana
   'gitlab-runner1*':
     - updates
     - gitlab-runner
