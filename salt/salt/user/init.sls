@@ -41,8 +41,7 @@ jodys:
     - mode: 0400
     - user: jodys
     - makedirs: true
-    - contents:
-      - {{ pillar['ssh_key'] }}
+    - contents:{{ pillar['ssh_key'] | yaml_encode }}
 
 #/home/jodys/.gitconfig:
 #  file.managed:
