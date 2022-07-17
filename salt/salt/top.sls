@@ -53,3 +53,7 @@ base:
   'gitlab-runner1*':
     - updates
     - gitlab-runner
+  'vault*':
+    - updates
+    - user
+    - vim
