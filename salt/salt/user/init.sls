@@ -41,7 +41,10 @@ jodys:
     - mode: 0400
     - user: jodys
     - makedirs: true
-    - contents:{{ pillar['ssh_key'] | yaml_encode }}
+    - template: jinja
+    - source: salt://user/authorized_keys.tmpl
+    - context:
+      ssh_keys: {{ pillar['ssh_key'] }}
 
 #/home/jodys/.gitconfig:
 #  file.managed:
