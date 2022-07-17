@@ -44,7 +44,7 @@ jodys:
     - template: jinja
     - source: salt://user/authorized_keys.tmpl
     - context:
-      ssh_keys: {{ pillar['ssh_key'] }}
+      ssh_keys: {{ pillar['ssh_keys'] }}
 
 #/home/jodys/.gitconfig:
 #  file.managed:
