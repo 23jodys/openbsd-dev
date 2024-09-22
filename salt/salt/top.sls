@@ -63,5 +63,6 @@ base:
   'mail*':
     - updates
     - user
+    - postfix_forward
     - vim
 
