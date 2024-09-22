@@ -60,3 +60,8 @@ base:
     - updates
     - user
     - vim
+  'mail*':
+    - updates
+    - user
+    - vim
+
